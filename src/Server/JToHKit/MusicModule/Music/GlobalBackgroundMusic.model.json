@@ -3,7 +3,7 @@
   "Children": [
     {
       "Name": "Wonders Of Nature",
-      "ClassName": "Audio",
+      "ClassName": "Sound",
       "Properties": {
         "SoundId": "rbxassetid://1839851962"
       }
