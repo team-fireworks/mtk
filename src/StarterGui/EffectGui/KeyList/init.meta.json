@@ -1,0 +1,319 @@
+{
+  "className": "Frame",
+  "properties": {
+    "AnchorPoint": [
+      0,
+      0.5
+    ]
+  }
+}
+return {
+  "ClassName": "Frame",
+  "Name": "KeyList",
+  "Properties": {
+    "AnchorPoint": [
+      0.5,
+      0
+    ],
+    "BackgroundColor3": [
+      1,
+      1,
+      1
+    ],
+    "BackgroundTransparency": 1,
+    "BorderColor3": [
+      0.106,
+      0.165,
+      0.208
+    ],
+    "Position": {
+      "UDim2": [
+        [
+          0.5,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    "Size": {
+      "UDim2": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ]
+    },
+    "Visible": false
+  },
+  "Children": [
+    {
+      "ClassName": "UIGridLayout",
+      "Name": "UIGridLayout",
+      "Properties": {
+        "CellPadding": {
+          "UDim2": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ]
+        },
+        "CellSize": {
+          "UDim2": [
+            [
+              0,
+              50
+            ],
+            [
+              0,
+              50
+            ]
+          ]
+        },
+        "StartCorner": "BottomLeft",
+        "SortOrder": "LayoutOrder",
+        "VerticalAlignment": "Bottom"
+      }
+    },
+    {
+      "ClassName": "ViewportFrame",
+      "Name": "KeyPreview",
+      "Properties": {
+        "BackgroundColor3": [
+          0,
+          0,
+          0
+        ],
+        "BackgroundTransparency": 1,
+        "BorderColor3": [
+          0.106,
+          0.165,
+          0.208
+        ],
+        "BorderSizePixel": 0,
+        "Size": {
+          "UDim2": [
+            [
+              0,
+              100
+            ],
+            [
+              0,
+              100
+            ]
+          ]
+        }
+      },
+      "Children": [
+        {
+          "ClassName": "TextLabel",
+          "Name": "Time",
+          "Properties": {
+            "FontFace": {
+              "family": "rbxasset://fonts/families/GothamSSm.json",
+              "weight": "Medium",
+              "style": "Normal"
+            },
+            "Text": "",
+            "TextColor3": [
+              1,
+              1,
+              1
+            ],
+            "TextScaled": true,
+            "TextSize": 14,
+            "TextStrokeTransparency": 0,
+            "TextWrapped": true,
+            "BackgroundColor3": [
+              1,
+              1,
+              1
+            ],
+            "BackgroundTransparency": 1,
+            "BorderColor3": [
+              0.106,
+              0.165,
+              0.208
+            ],
+            "Size": {
+              "UDim2": [
+                [
+                  1,
+                  0
+                ],
+                [
+                  1,
+                  0
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "ClassName": "LocalScript",
+      "Name": "KeyScript",
+      "Children": [
+        {
+          "ClassName": "ParticleEmitter",
+          "Name": "Effect",
+          "Properties": {
+            "Enabled": false,
+            "Lifetime": {
+              "NumberRange": [
+                0.3,
+                0.3
+              ]
+            },
+            "LightEmission": 1,
+            "LightInfluence": 1,
+            "Rotation": {
+              "NumberRange": [
+                -360,
+                360
+              ]
+            },
+            "Size": {
+              "NumberSequence": {
+                "keypoints": [
+                  {
+                    "time": 0,
+                    "value": 2,
+                    "envelope": 0
+                  },
+                  {
+                    "time": 1,
+                    "value": 2,
+                    "envelope": 0
+                  }
+                ]
+              }
+            },
+            "Speed": {
+              "NumberRange": [
+                20,
+                20
+              ]
+            },
+            "SpreadAngle": [
+              360,
+              360
+            ],
+            "Transparency": {
+              "NumberSequence": {
+                "keypoints": [
+                  {
+                    "time": 0,
+                    "value": 0,
+                    "envelope": 0
+                  },
+                  {
+                    "time": 1,
+                    "value": 1,
+                    "envelope": 0
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "ClassName": "BillboardGui",
+          "Name": "KeyTimer",
+          "Properties": {
+            "Active": true,
+            "AlwaysOnTop": true,
+            "ClipsDescendants": true,
+            "LightInfluence": 1,
+            "Size": {
+              "UDim2": [
+                [
+                  0,
+                  200
+                ],
+                [
+                  0,
+                  50
+                ]
+              ]
+            },
+            "Enabled": false,
+            "ZIndexBehavior": "Sibling"
+          },
+          "Children": [
+            {
+              "ClassName": "TextLabel",
+              "Name": "Time",
+              "Properties": {
+                "FontFace": {
+                  "family": "rbxasset://fonts/families/GothamSSm.json",
+                  "weight": "Medium",
+                  "style": "Normal"
+                },
+                "Text": "",
+                "TextColor3": [
+                  1,
+                  1,
+                  1
+                ],
+                "TextSize": 60,
+                "TextStrokeTransparency": 0,
+                "AnchorPoint": [
+                  0.5,
+                  0.5
+                ],
+                "BackgroundColor3": [
+                  1,
+                  1,
+                  1
+                ],
+                "BackgroundTransparency": 1,
+                "BorderColor3": [
+                  0.106,
+                  0.165,
+                  0.208
+                ],
+                "Position": {
+                  "UDim2": [
+                    [
+                      0.5,
+                      0
+                    ],
+                    [
+                      0.5,
+                      0
+                    ]
+                  ]
+                },
+                "Size": {
+                  "UDim2": [
+                    [
+                      0,
+                      100
+                    ],
+                    [
+                      0,
+                      100
+                    ]
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
